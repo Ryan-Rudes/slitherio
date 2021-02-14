@@ -80,7 +80,7 @@ class Slitherio(gym.Env):
     def reset(self):
         self.begin(self.field)
         self.wait_until_game_has_loaded()
-        self.score = 0
+        self.score = self.get_score()
         return self.observe()
 
     def observe(self):

@@ -28,3 +28,6 @@ env.close()
 > [**CLICK THIS LINK TO VIEW YOUTUBE VIDEO (Demo of random agent interacting with the Slitherio code)**](https://www.youtube.com/watch?v=rnbWEs4yOrY)
 
 You have to actually terminate the episode when you receive a value of `True` from `terminal`. Otherwise, there will be a problem because you cannot view the current score after the game has ended (once the scoreboard has vanished) without throwing an error.
+
+## Faster Implementation
+The alternative file, `faster.py`, is the same, but relies instead on a screenshot library to generate frames, rather than the chrome browser. It runs at a far higher framerate, (essentially as fast as your monitor is), but requires the browser to be open to take the screenshots.

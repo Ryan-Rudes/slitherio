@@ -25,6 +25,6 @@ env.close()
 ```
 
 > ![demo](demo.gif) \
-> [**CLICK THIS LINK TO VIEW YOUTUBE VIDEO**](https://www.youtube.com/watch?v=rnbWEs4yOrY)
+> [**CLICK THIS LINK TO VIEW YOUTUBE VIDEO (Demo of random agent interacting with the Slitherio code)**](https://www.youtube.com/watch?v=rnbWEs4yOrY)
 
 You have to actually terminate the episode when you receive a value of `True` from `terminal`. Otherwise, there will be a problem because you cannot view the current score after the game has ended (once the scoreboard has vanished) without throwing an error.

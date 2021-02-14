@@ -24,4 +24,6 @@ while True:
 env.close()
 ```
 
+<a href="https://www.youtube.com/watch?v=rnbWEs4yOrY&feature=youtu.be"><img src="https://i.ibb.co/0r5g91h/ezgif-frame-001-1.jpg"></a>
+
 You have to actually terminate the episode when you receive a value of `True` from `terminal`. Otherwise, there will be a problem because you cannot view the current score after the game has ended (once the scoreboard has vanished) without throwing an error.

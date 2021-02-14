@@ -47,7 +47,6 @@ class Slitherio(gym.Env):
         self.wait_until_can_enter_nickname()
         field = self.browser.find_element_by_xpath(self.xpaths['nickname'])
         field.send_keys(self.nickname)
-        self.active_low_quality_mode()
         return field
 
     def begin(self, field):
@@ -56,9 +55,6 @@ class Slitherio(gym.Env):
 
     def wait_until_game_has_loaded(self):
         WebDriverWait(self.browser, 1000).until(EC.invisibility_of_element((By.XPATH, self.xpaths['mainpage'])))
-
-    def active_low_quality_mode(self):
-        self.browser.find_element_by_xpath('/html/body/div[3]/div[7]').click()
 
     def start(self):
         options = Options()
